@@ -1,2 +1,1 @@
-add_lunch_combo slim_jfltespr-userdebug
-
+add_lunch_combo ukg_jfltespr-userdebug
