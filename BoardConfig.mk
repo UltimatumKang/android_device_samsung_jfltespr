@@ -12,7 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common JF
+#
+# This file sets variables that control the way modules are built
+# thorughout the system. It should not be used to conditionally
+# disable makefiles (the proper mechanism to control what gets
+# included in a build is to use PRODUCT_PACKAGES in a product
+# definition file).
+#
+
+# inherit from common jf
 -include device/samsung/jf-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
@@ -22,4 +30,5 @@
 TARGET_OTA_ASSERT_DEVICE := jfltespr
 
 # Kernel
-TARGET_KERNEL_CONFIG         := jf_spr_defconfig
+TARGET_KERNEL_CONFIG    := jf_spr_defconfig
+
